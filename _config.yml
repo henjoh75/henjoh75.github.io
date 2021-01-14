@@ -26,7 +26,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: hejo75
 github_username:  henjoh75
-
+defaults:
+    - 
+        scope:
+            path: "assets/img"
+        values:
+            image: true
+        
 # Build settings
 theme: minima
 plugins:

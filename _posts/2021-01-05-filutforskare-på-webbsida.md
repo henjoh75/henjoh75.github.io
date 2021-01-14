@@ -9,6 +9,8 @@ tags: asp.net C# javascript
 
 Jag ville ha en filutforskare på en webbsida som inte innebar att användaren ska klicka runt i en trädstruktur och byggde då en lösning som liknar den i google drive. Här beskriver jag hur jag gjorde.
 
+![Filutforskare på webbsida](/assets/img/filutforskare-webb.png)
+
 Obs! Den här implementationen är inte gjord för stora mängder filer eftersom den laddar in alla då sidan öppnas, men funkar utmärkt med ett hundratal filer. Fördelen är att den är väldig snabb eftersom den inte behöver ladda något från servern när man bläddrar mellan foldrar.  
 
 Filerna ligger i en platt struktur i en egen "store" med metadata i en databas.
