@@ -61,7 +61,14 @@ Här är några av de git-kommandon som jag inte kommer ihåg, men återkommer t
 		git remote add origin https://github.com/{username}/{new_repo}
 		git push -u origin master
 
-	
+## Remove remote branches that do not exist in remote
+	git remote prune origin
+
+## Remove local branches that do not exist in remote
+**Note that new not yet pushed branches will be removed by this**
+
+	git branch -vv | Select-String -Pattern ": gone]" | % { $_.ToString().Trim().Split(" ")[0]} | % {git branch -d $_}
+
 ## Contents of .gitignore
 	.DS_Store
 	.Trashes
